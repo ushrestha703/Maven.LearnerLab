@@ -7,8 +7,8 @@ public class TestPerson {
 
     @Test
     public void PersonConstructorTest() {
-        Person person = new Person(9823, "John");
-        Long expectedId = 9823;
+        Person person = new Person(982L, "John");
+        Long expectedId = 982L;
         Long actualId = person.getId();
         String expectedName = "John";
         String actualName = person.getName();
@@ -19,7 +19,7 @@ public class TestPerson {
 
     @Test
     public void setNameTest(){
-        Person personOne = new Person(9823, "John");
+        Person personOne = new Person(982L, "John");
         personOne.setName("Wick");
         String expectedName = "Wick";
         String actualName = personOne.getName();
